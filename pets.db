@@ -1,0 +1,17 @@
+CREATETABLEperson(
+idINTEGERPRIMARYKEY,
+first_nameTEXT,
+last_nameTEXT,
+ageINTEGER
+);
+CREATETABLEpet(
+idINTEGERPRIMARYKEY,
+nameTEXT,
+breedTEXT,
+ageINTEGER,
+deadINTEGER
+);
+CREATETABLEperson_pet(
+person_idINTEGER,
+pet_idINTEGER
+);
