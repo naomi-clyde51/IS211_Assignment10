@@ -1,17 +1,19 @@
-CREATETABLEperson(
-idINTEGERPRIMARYKEY,
-first_nameTEXT,
-last_nameTEXT,
-ageINTEGER
+CREATE TABLE person (
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age INTEGER
 );
-CREATETABLEpet(
-idINTEGERPRIMARYKEY,
-nameTEXT,
-breedTEXT,
-ageINTEGER,
-deadINTEGER
+
+CREATE TABLE pet (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  breed TEXT,
+  age INTEGER,
+  dead INTEGER
 );
-CREATETABLEperson_pet(
-person_idINTEGER,
-pet_idINTEGER
+
+CREATE TABLE person_pet (
+  person_id INTEGER,
+  pet_id INTEGER
 );
